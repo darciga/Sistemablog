@@ -23,7 +23,7 @@ class Entrada(models.Model):
 	autor = models.ManyToManyField(Autor)
 	n_comentarios = models.IntegerField()
 
-	def __init__(self):
+	def __unicode__(self):
 		return self.titulo
 		
 		
